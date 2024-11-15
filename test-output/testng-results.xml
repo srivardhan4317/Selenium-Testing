@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-28T00:26:54 IST" name="MySuite" finished-at="2024-10-28T00:27:10 IST" duration-ms="16151">
+    <groups>
+    </groups>
+    <test started-at="2024-10-28T00:26:54 IST" name="TestScript" finished-at="2024-10-28T00:27:03 IST" duration-ms="8671">
+      <class name="scripts.TestScript">
+        <test-method signature="test()[pri:0, instance:scripts.TestScript@6dde5c8c]" started-at="2024-10-28T00:26:54 IST" name="test" finished-at="2024-10-28T00:27:03 IST" duration-ms="8587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- scripts.TestScript -->
+    </test> <!-- TestScript -->
+    <test started-at="2024-10-28T00:27:03 IST" name="TestScript1" finished-at="2024-10-28T00:27:10 IST" duration-ms="7374">
+      <class name="scripts.TestScript1">
+        <test-method signature="test2()[pri:0, instance:scripts.TestScript1@4df828d7]" started-at="2024-10-28T00:27:03 IST" name="test2" finished-at="2024-10-28T00:27:10 IST" duration-ms="7372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- scripts.TestScript1 -->
+    </test> <!-- TestScript1 -->
+  </suite> <!-- MySuite -->
+</testng-results>
