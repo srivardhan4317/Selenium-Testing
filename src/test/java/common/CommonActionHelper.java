@@ -1122,7 +1122,6 @@
 //                        scenario.attach(s.substring(s.indexOf("correlationId"), s.indexOf("correlationId") + 50),"text/plain","");
 //                    scenario.attach(imageInByte, "image/png","");
 //                } catch (IOException e) {
-//                    // TODO Auto-generated catch block
 //                    e.printStackTrace();
 //                }
 //                flag = true;
@@ -1179,7 +1178,7 @@
 //						scenario.attach(s.substring(s.indexOf("correlationId"), s.indexOf("correlationId") + 50),"text/plain","");
 //					scenario.attach(imageInByte, "image/png","");
 //				} catch (IOException e) {
-//					// TODO Auto-generated catch block
+
 //					e.printStackTrace();
 //				}
 //			} catch (Exception wde) {
