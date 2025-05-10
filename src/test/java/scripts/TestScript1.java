@@ -1,27 +1,30 @@
 package scripts;
 
-import common.ActionHelper;
+import commonPackage.ActionHelper;
 import common.Report;
+import commonPackage.TestReporter;
+import commonPackage.TestSetup;
 import org.testng.annotations.Test;
 
-public class TestScript1 extends ActionHelper {
+public class TestScript1 extends TestSetup {
 
-    @Test()
-    void test2() {
-        Report.setup();
-        try {
-            ActionHelper.browserLaunch.launchBrowser("TC2", "edge", "application");
-//            report.pass("TC2");
+    @Test
+    public void customerNumberIdentification() {
+        TestReporter.startChildTest("TestCase 1");
+        TestReporter.passStep("Validated input");
+        TestReporter.endChildTest();
 
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        finally {
-            ActionHelper.quitBrowser();
-            Report.tearDown();
-        }
+        TestReporter.startChildTest("TestCase 2");
+        TestReporter.failStep("Failed to validate response");
+        TestReporter.endChildTest();
 
+        TestReporter.startChildTest("TestCase 3");
+        TestReporter.passStep("Success screen verified");
+        TestReporter.endChildTest();
+
+        // Repeat for TestCase 4 to 8...
     }
+
 
 
 }

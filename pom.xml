@@ -10,7 +10,6 @@
 
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
         <dependency>
@@ -59,28 +58,29 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.25.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>4.25.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>4.25.0</version>
+            <version>4.31.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>9.3.0</version>
+            <version>9.4.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>4.31.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.31.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
@@ -112,21 +112,8 @@
             <version>3.4.2</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-common -->
-        <dependency>
-            <groupId>org.seleniumhq.webdriver</groupId>
-            <artifactId>webdriver-common</artifactId>
-            <version>0.9.7376</version>
-        </dependency>
 
 
-
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>Testng</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
@@ -142,6 +129,11 @@
             <version>5.1.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version>
+        </dependency>
 
 
     </dependencies>

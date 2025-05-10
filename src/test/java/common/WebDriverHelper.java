@@ -39,7 +39,7 @@ public class WebDriverHelper {
     //    public String captureScreenShot;
     public String captureOnlyFAIL;
 
-    public static common.Constants constant = new common.Constants();
+    public static Constants constant = new Constants();
 
     public static int explicitWaitTime = 5;
 
@@ -469,7 +469,7 @@ public class WebDriverHelper {
             logger.info("Text/Message ->" + expectedText + "<- is found on the current page");
             flag = true;
             captureScreenShot(constant.PASS);
-        } catch (java.lang.NullPointerException e) {
+        } catch (NullPointerException e) {
             logger.error("NullPointerException in display message::" + e.getMessage());
             flag = false;
             captureScreenShot(constant.FAIL);
@@ -495,7 +495,10 @@ public class WebDriverHelper {
             if (flag) {
                 captureScreenShot(constant.PASS);
             }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+        return false;
     }
 
     public void captureScreenShot(String status) {
@@ -506,7 +509,7 @@ public class WebDriverHelper {
             this.isStepPass = false;
         }
 
-        String captureScreenShot;
+        String captureScreenShot = "";
         if ("yes".equalsIgnoreCase(captureScreenShot)) {
             if ("no".equalsIgnoreCase(captureOnlyFAIL) && !isStepPass) {
                 takeScreenshot();
